@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta naame="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="title" >To Do List</h1>
+            <div class="box">
+                <div class="itembox">
+                    <div class="searchbox">
+                        <input id="task" tabinde type="text" placeholder="Enter the Task">
+                        <button id="add-btn" onclick="createTask()" >Add</button>
+                    </div>
+                    <div class="listbox">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progressclass">
+            <h2 id="progress_title" >Progress</h2>
+            <div class="progress">
+                <div class="outer">
+                    <div class="inner">
+                        <div>
+                            <div id="number">0 %</div>
+                            <!-- <div id="tasknumber"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#e91e63" />
+                          <stop offset="100%" stop-color="#673ab7" />
+                       </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div id="tasknumber"></div>
+            <div id="message">Let's get started!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
